@@ -4,28 +4,12 @@ unsigned long time1 = NULL;
 unsigned long time2 = NULL;
 float dist = 101600; //4 inches.  Change if sensing range differs
 
-//Because microseconds are not recorded with decimals, we had to use
-//Megameters instead of meters in order to get the correct units
-//for our calculations
-
 void setup()
 {
   Serial.begin(9600);
   pinMode(pin1, INPUT);
   pinMode(pin2, INPUT);
-  //delay(5000)
-  //attachInterrupt(digitalPinToInterrupt(pin1), timer1, RISING);
-  //attachInterrupt(digitalPinToInterrupt(pin2), timer2, RISING);
-  
 }
-
-//void timer1() {
-  //time1 = micros();
-//}
-
-//void timer2() {
-  //time2 = micros();
-//}
 
 void loop()
 {
